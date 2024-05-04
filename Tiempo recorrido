@@ -1,0 +1,11 @@
+# Paso 1: Solicitar la velocidad al usuario
+velocidad = float(input("Ingrese la velocidad del carro (en unidades de distancia por unidad de tiempo): "))
+
+# Paso 2: Solicitar la distancia al usuario
+distancia = float(input("Ingrese la distancia que el carro debe recorrer (en las mismas unidades que la velocidad): "))
+
+# Paso 3: Calcular el tiempo que tomará al carro recorrer la distancia
+tiempo = distancia / velocidad
+
+# Paso 4: Mostrar el resultado al usuario
+print("El tiempo que tomará al carro recorrer la distancia es:", tiempo, "unidades de tiempo.")

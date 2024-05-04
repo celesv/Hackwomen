@@ -1,0 +1,26 @@
+# Lee la fecha de nacimiento del usuario
+print("Ingresa tu fecha de nacimiento:")
+anio_nacimiento = int(input("Año: "))
+mes_nacimiento = int(input("Mes: "))
+dia_nacimiento = int(input("Día: "))
+
+# Lee la fecha actual
+print("\nIngresa la fecha actual:")
+anio_actual = int(input("Año: "))
+mes_actual = int(input("Mes: "))
+dia_actual = int(input("Día: "))
+
+# Calcula la diferencia en años, meses y días
+diferencia_anios = anio_actual - anio_nacimiento
+diferencia_meses = mes_actual - mes_nacimiento
+diferencia_dias = dia_actual - dia_nacimiento
+
+# Ajusta la diferencia si la fecha actual es anterior a la fecha de nacimiento
+if diferencia_meses < 0 or (diferencia_meses == 0 and diferencia_dias < 0):
+    diferencia_anios -= 1
+
+# Calcula el número total de días vividos
+dias_vividos = diferencia_anios * 365 + diferencia_meses * 30 + diferencia_dias
+
+# Imprime el resultado
+print("\nHas vivido aproximadamente", dias_vividos, "días.")

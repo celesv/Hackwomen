@@ -1,0 +1,13 @@
+inicio = [3, 9, 1, 10, 500, 1, 10]
+
+def ordenar_numeros(arr):
+    for i in range(len(arr) - 1):
+        for j in range(len(arr) - 1 - i):
+            if arr[j] > arr[j + 1]:
+                temp = arr[j]
+                arr[j] = arr[j + 1]
+                arr[j + 1] = temp
+    return arr
+
+resultado = ordenar_numeros(inicio)
+print(resultado)

@@ -1,0 +1,16 @@
+import datetime
+
+# Obtener la fecha actual
+fecha_actual = datetime.date.today()
+
+# Definir las fechas de interés
+dia_de_muertos = datetime.date(fecha_actual.year, 11, 2)
+navidad = datetime.date(fecha_actual.year, 12, 25)
+
+# Calcular la diferencia de días
+dias_para_muertos = (dia_de_muertos - fecha_actual).days
+dias_para_navidad = (navidad - fecha_actual).days
+
+# Imprimir resultados
+print("Días restantes para el Día de Muertos:", dias_para_muertos)
+print("Días restantes para Navidad:", dias_para_navidad)

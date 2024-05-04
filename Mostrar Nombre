@@ -1,0 +1,5 @@
+# Solicitar al usuario que ingrese su nombre
+nombre = input("Por favor, ingresa tu nombre: ")
+
+# Imprimir el nombre en la pantalla
+print("Tu nombre es:", nombre)

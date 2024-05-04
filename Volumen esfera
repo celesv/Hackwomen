@@ -1,0 +1,9 @@
+# Lee el radio de la esfera desde el usuario
+radio = float(input("Ingresa el radio de la esfera: "))
+
+# Calcula el volumen
+pi = 3.14159
+volumen = (4/3) * pi * (radio ** 3)
+
+# Imprime el resultado
+print("El volumen de la esfera es:", volumen)

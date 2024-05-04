@@ -1,0 +1,10 @@
+palabra = input("Ingrese una palabra o frase: ")
+
+# Eliminar espacios en blanco y convertir a minúsculas
+palabra = palabra.replace(" ", "").lower()
+
+# Comprobar si la palabra es igual a su reverso
+if palabra == palabra[::-1]:
+    print("La palabra o frase es un palíndromo.")
+else:
+    print("La palabra o frase no es un palíndromo.")

@@ -1,0 +1,12 @@
+# Solicitar al usuario que ingrese el año
+year = int(input("Ingrese un año: "))
+
+# Verificar si el año es bisiesto
+if year % 400 == 0:
+    print(year, "es un año bisiesto.")
+elif year % 100 == 0:
+    print(year, "no es un año bisiesto.")
+elif year % 4 == 0:
+    print(year, "es un año bisiesto.")
+else:
+    print(year, "no es un año bisiesto.")

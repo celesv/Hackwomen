@@ -1,0 +1,15 @@
+# Paso 1: Leer el salario de la persona
+salario = float(input("Ingrese el salario de la persona: "))
+
+# Paso 2: Verificar si el salario es menor a 15,000
+if salario < 15000:
+    # Paso 3: Calcular el incremento del 20%
+    incremento = salario * 0.20
+else:
+    # Paso 4: Calcular el incremento del 15%
+    incremento = salario * 0.15
+
+# Paso 5: Imprimir el salario original y el salario incrementado
+print("Salario original:", salario)
+print("Incremento salarial:", incremento)
+print("Salario incrementado:", salario + incremento)
